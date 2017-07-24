@@ -24,6 +24,7 @@ source 'https://rubygems.org'
   group :development, :test do
    gem 'rspec-rails', '~> 3.0'
    gem 'rails-controller-testing'
+   gem 'pry-rails', :group => :development
  end
  
  # Use Puma as the app server
@@ -41,6 +42,8 @@ source 'https://rubygems.org'
  gem 'jbuilder', '~> 2.5'
  
  gem 'thor', '0.19.1'
+ 
+ 
  
  group :development do
    gem 'listen', '~> 3.0.5'
