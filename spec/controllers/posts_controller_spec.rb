@@ -14,7 +14,8 @@ RSpec.describe PostsController, type: :controller do
        get :index
  # #9
        expect(assigns(:posts)).to eq([my_post])
-     end    
+     end  
+     
   end
 
  #  describe "GET show" do
