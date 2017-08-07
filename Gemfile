@@ -51,4 +51,6 @@ source 'https://rubygems.org'
  
   # Used for encrypting passwords
  gem 'bcrypt'
+  # Used to make it easy to securely configure Rails applications(Configuration values often include sensitive information)
+ gem 'figaro', '1.0'
  
