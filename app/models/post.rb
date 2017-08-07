@@ -36,7 +36,7 @@ class Post < ApplicationRecord
 ##assignment 29
    private
    def create_vote
-      user.votes.create(value: 1)
+      user.votes.create(value: 1, post: self)
    end
    
 end

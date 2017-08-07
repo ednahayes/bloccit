@@ -59,7 +59,7 @@
    password: 'helloworld'
  )
 
-end
+
  
  puts "Seed finished"
  puts "#{User.count} users created" 
@@ -68,3 +68,4 @@ end
  puts "#{Comment.count} comments created"
  puts "#{Vote.count} votes created"
 
+end
