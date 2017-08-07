@@ -34,6 +34,7 @@
  
  post.update_attribute(:created_at, rand(10.minutes .. 1.year).ago)
  rand(1..5).times { post.votes.create!(value: [-1, 1].sample, user: users.sample) }
+
  
  # Create Comments
  100.times do
@@ -58,7 +59,7 @@
    password: 'helloworld'
  )
 
-
+end
  
  puts "Seed finished"
  puts "#{User.count} users created" 
@@ -67,4 +68,3 @@
  puts "#{Comment.count} comments created"
  puts "#{Vote.count} votes created"
 
-end
