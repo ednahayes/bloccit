@@ -29,13 +29,13 @@
      body:   RandomData.random_paragraph
    )
 
- posts = Post.all
- 
- 
  post.update_attribute(:created_at, rand(10.minutes .. 1.year).ago)
  rand(1..5).times { post.votes.create!(value: [-1, 1].sample, user: users.sample) }
  
- # Create Comments
+end
+ posts = Post.all
+ 
+  # Create Comments
  100.times do
    Comment.create!(
      user: users.sample,
@@ -43,6 +43,8 @@
      body: RandomData.random_paragraph
    )
  end
+
+
  # Create an admin user
  admin = User.create!(
    name:     'Admin User',
@@ -67,4 +69,3 @@
  puts "#{Comment.count} comments created"
  puts "#{Vote.count} votes created"
 
-end
