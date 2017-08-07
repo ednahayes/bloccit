@@ -28,7 +28,7 @@
      title:  RandomData.random_sentence,
      body:   RandomData.random_paragraph
    )
- end
+
  posts = Post.all
  
  
@@ -67,3 +67,4 @@
  puts "#{Comment.count} comments created"
  puts "#{Vote.count} votes created"
 
+end
