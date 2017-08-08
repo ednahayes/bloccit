@@ -32,13 +32,12 @@ class Post < ApplicationRecord
    end   
    
    #assignment 30
-   after_create :send_favorite_emails
+   after_create :create_favorite
  
    private
  
-   def send_favorite_emails
-     post.favorites.each do |favorite|
-       FavoriteMailer.new_post(favorite.user, title, body, self).deliver_now
-     end
+   def create_favorite
+     Favorite.create(post: self, user: self.user)
+       FavoriteMailer.new_post(self).deliver_now
    end   
 end
