@@ -30,4 +30,15 @@ class Post < ApplicationRecord
      new_rank = points + age_in_days
      update_attribute(:rank, new_rank)
    end   
+   
+   #assignment 30
+   after_create :send_favorite_emails
+ 
+   private
+ 
+   def send_favorite_emails
+     post.favorites.each do |favorite|
+       FavoriteMailer.new_post(favorite.user, title, body, self).deliver_now
+     end
+   end   
 end

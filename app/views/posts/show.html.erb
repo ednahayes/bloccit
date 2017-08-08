@@ -6,6 +6,9 @@
        submitted <%= time_ago_in_words(@post.created_at) %> ago by <%= @post.user.name %>
      </small>
    </h1>
+   <!-- #Assignment 30-->
+   <%= content_tag :div, class: 'media', id: "post-#{post.id}" do %>
+    <% end %>
  </div>
  <div class="row">
    <div class="col-md-8">
