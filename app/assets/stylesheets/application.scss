@@ -16,12 +16,14 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  
- #avatar-image {
-  margin-top: -15px;
+#avatar-image {
+  
+  margin-top: 10px;
   padding-bottom: 5px;
-  padding-right: 20px;
+  margin-right: 0px;
+  padding-right: 0px;
  }
- 
+
  .user-info {
   margin-top: 5px;
   margin-bottom: 5px;
