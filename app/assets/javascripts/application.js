@@ -29,4 +29,4 @@
    
     request.send(JSON.stringify(event));
    };
-   blocmetrics.report('topic, post, favorite, comment, vote, user');
+  
