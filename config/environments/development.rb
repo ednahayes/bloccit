@@ -38,8 +38,11 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-  
-  config.action_mailer.default_url_options = { host: 'localhost' } 
- 
+  host = 'ehayes-bloccit.herokuapp.com'
+  #changed 'localhost' to host
+  config.action_mailer.default_url_options = { host: host } 
   config.raise_delivery_errors = true
+  
+  #added below
+  config.action_mailer.smtp_settings = {:address => "host"}
 end
