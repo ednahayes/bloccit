@@ -1,28 +1,35 @@
 <div class="container"> 
  <div class="jumbotron">
+   <br />
+   <br />
+   <br />
    <h1>Bloccit</h1>
+   <br />
    <p>Bloccit is a resource for sharing links with your friends!</p>
    <p>
     <% if !current_user %>
-     <%= link_to "Sign In", new_session_path %> or
+     <%= link_to "Sign In", new_session_path, class: 'btn btn-secondary' %> or
      <%= link_to "Sign Up", new_user_path, class: 'btn btn-primary' %> today!
      <% end %>
    </p>
+   <br />
+   <br />
+   <br />
  </div>
 </div> 
 <div class="container"> 
  <div class="row">
    <div class="col-md-4">
-     <h2>Solves world hunger</h2>
-     <p>Bloccit will deliver food and water to those in need, all over the world.</p>
+     <h2>Discover top trending topics</h2>
+     <p>Bloccit connects you to the world by using a haven of free expression.</p>
    </div>
    <div class="col-md-4">
-     <h2>Eliminates poverty</h2>
-     <p>Bloccit will deliver money and education to those in need, all over the world.</p>
+     <h2>Contribute your input into the community</h2>
+     <p>Let others know what you think loudly by posting to the topics of your choice.</p>
    </div>
    <div class="col-md-4">
-     <h2>Makes you better looking</h2>
-     <p>Bloccit will make you better looking: it's scientifically proven to make men look like Ryan Gosling and women look like Shakira.</p>
+     <h2>Post, Comment, Favorite and vote</h2>
+     <p>By creating authentic conversation pieces, you are entitled to post, comment, favorite and vote.</p>
    </div>
  </div>
 </div> 

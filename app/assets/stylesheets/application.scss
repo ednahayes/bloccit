@@ -16,6 +16,21 @@
  @import "bootstrap-sprockets";
  @import "bootstrap";
  
+.jumbotron {
+    margin-bottom: 0px;
+    background-image: image-url("beach.JPG");
+    background-position: 0% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    text-shadow: black 0.3em 0.3em 0.3em;
+} 
+ 
+.btn-secondary {
+ background-color: cyan;
+ color: blue;
+}
+
 #avatar-image {
   
   margin-top: 10px;
