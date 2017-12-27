@@ -19,8 +19,7 @@
    blocmetrics.report = function(eventName){
    
     var event = {event: { name: eventName }};
- 
-   
+
     var request = new XMLHttpRequest();
   
     request.open("POST", "https://ehayes-blocmetrics.herokuapp.com/api/events", true);
